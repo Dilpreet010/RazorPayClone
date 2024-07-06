@@ -46,83 +46,6 @@
             top:-50%;
           }
         }
-        @media (min-width:1250px) and (max-width:4000px){
-          .feature2{
-            width: 600px;
-            display: block;
-          }
-          .demoBox{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-          }
-          .buttonAndhyperlink{
-            flex-direction: row;
-          }
-          .button{
-            width: fit-content;
-            justify-content: start;
-          }
-          .hyperlink{
-            align-self: center;
-          }
-        }
-        @media (min-width:1182px) and (max-width:1249px){
-          .feature2{
-            width: 600px;
-            display: block;
-          }
-          .buttonAndhyperlink{
-            flex-direction: row;
-          }
-          .button{
-            width: fit-content;
-            justify-content: start;
-          }
-          .hyperlink{
-            align-self: center;
-          }
-          .demoBox{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-          }
-          
-        }
-        @media (min-width:941px) and (max-width:1181px){
-          .feature2{
-            width: 420px;
-            display: block;
-          }
-          .buttonAndhyperlink{
-            flex-direction: row;
-          }
-          .button{
-            width: fit-content;
-            justify-content: start;
-          }
-          .hyperlink{
-            align-self: center;
-          }
-          .demoBox{
-            display: flex;
-            flex-direction: column;
-            align-items: row;
-            align-self: center;
-            justify-content: space-around;
-          }
-          
-        }
-        @media (min-width:773px) and (max-width:940px){
-          .demoBox{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-          }
-        }
      </style>
     
     
@@ -207,11 +130,11 @@
                     class="hidden lg:block"
                     />
                 <button class="py-3 px-5 font-mullish text-white border-lightBlue border
-                rounded-sm text-sm  font-bold -mx-[48rem] sm:-mx-[30rem]">Log in</button>
+                rounded-sm text-sm  font-bold -mx-[53rem] sm:-mx-[30rem]">Log in</button>
                 <img src="./images/Hamburg.png" 
                 height="50px"
                 width="50px"
-                class="absolute left-[26rem] top-[1rem] sm:left-[44rem] lg:hidden">
+                class="absolute left-[21rem] top-[1rem] sm:left-[44rem] lg:hidden">
                 <button class="py-3 px-4 font-mullish rounded-sm text-sm font-bold
                 bg-white text-lightBlue300 border transition-all duration-200
                 hover:text-lightBlue500 hidden lg:flex">Sign Up
@@ -690,10 +613,10 @@
                                 <span>View financial insights at a glance</span>
                             </li>
                         </ul>
-                        <div class="flex flex-col-reverse buttonAndhyperlink w-full items-center space-x-4">
+                        <div class="flex flex-col-reverse  w-full md:flex-row items-center space-x-4">
                           <button class="relative bg-lightBlue flex items-center 
                           justify-center text-white py-[14px] px-[18px] md:pr-[90px] rounded-md
-                           font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 w-full  button">
+                           font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 w-full md:w-fit md:justify-center">
                               Sign Up
                               <div class="w-12 h-[60px] bg-greenLight absolute right-6 skew-x-[20deg] 
                               flex justify-center items-center">
@@ -711,7 +634,7 @@
                               </div>
                     </button>
                             <!--hyperlink-->
-                            <div class="flex flex-row self-start hyperlink cursor-pointer group">
+                            <div class="flex flex-row self-start md:self-center cursor-pointer group">
                                 <a href="#"
                                 class="font-mullish font-bold text-lightBlue500 group-hover:text-lightBlue
                                 transition-all duration-200"
@@ -725,7 +648,7 @@
                     </div>
                     <!--background image for content-->
                     <img src="./images/buisness-banking.png" 
-                    class="hidden absolute right-0 bottom-0 z-5 feature2" alt="">
+                    class="hidden md:w-420px md:block lg:w-600px lg:block absolute right-0 bottom-0 z-5 " alt="">
                 </div>
                 <!--card box-->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-4 my-14 ">
@@ -911,7 +834,7 @@
                     </div>
                 </div>
                 <!--demo box-->
-                <div class="w-full  demoBox border border-slate-700 
+                <div class="w-full md:flex md:flex-col md:items-center md:justify-around lg:flex-row border border-slate-700 
                 mb-24 gap-y-6 p-8 relative rounded-md hidden">
                     <p class="font-mullish text-xl text-white">Check out the live demo to learn how RazorpayX works. 
                         <span class="font-bold">No sign-up required!</span>
@@ -1148,7 +1071,7 @@
     <section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-[150px] md:-mt-[200px] -z-[100]">
         <div class="w-11/12 max-w-[1080px] mx-auto relative flex flex-col md:flex-row">
             <!--left part-->
-            <div class="flex flex-col justify-center w-[560px]">
+            <div class="flex flex-col justify-center w-[370px] sm:w-[560px]">
                 <h2 class="font-mullish font-bold text-2xl text-deepBlueHead">Join the 50,00,000+ businesses using Razorpay</h2>
                 <div class="w-6 h-1 bg-greenLight mb-10 my-4"></div>
                 <p class="font-mullish opacity-80 ">
@@ -1159,7 +1082,7 @@
                 </p>
             </div>
             <!--right part-->
-            <div class="h-[500px] w-[500px] relative overflow-y-hidden ">
+            <div class="h-[500px] w-[380px] sm:w-[500px] relative overflow-y-hidden ">
                 <div style="background: linear-gradient(180deg, #f4f8ff, #fff0)"
                 class="absolute w-full h-[150px] top-0 z-50">    </div>
         
@@ -1188,8 +1111,8 @@
 
 
     <!--left button -->
-    <button class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute left-0 top-1/2
-     flex justify-center items-center ">
+    <button class="w-[50px] h-[50px] bg-[#f4f8ff] rounded-full absolute left-0 top-1/2
+     flex justify-center items-center sm:w-[100px] sm:h-[100px] ">
       <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex justify-center items-center
       mix-blend-multiply">
         <i
@@ -1200,8 +1123,8 @@
     </button>
 
         <!--right button -->
-    <button class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute right-0 top-1/2
-    flex justify-center items-center ">
+    <button class="w-[50px] h-[50px] bg-[#f4f8ff] rounded-full absolute right-0 top-1/2
+    flex justify-center items-center sm:w-[100px] sm:h-[100px]">
           <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex justify-center items-center
           mix-blend-multiply">
             <i
@@ -1213,7 +1136,7 @@
 
 
     <!-- main content -->
-    <div class="flex flex-col xl:flex-row  max-w-[960px] items-center mx-auto my-20 space-x-[10rem]">
+    <div class="flex flex-col xl:flex-row  max-w-[960px] items-center mx-auto my-20 space-x-[5rem] md:space-x-[10rem]">
       <!--left image -->
       <img src="./images/testimonial.jpg" alt=""
       height="320px"
@@ -1221,7 +1144,7 @@
       class="rounded-xl">
 
       <!-- right part-->
-      <div class="max-w-[400px] flex flex-col mx-auto md:items-start">
+      <div class="max-w-[400px] flex flex-col md:mx-auto md:items-start">
         
         <div class="flex flex-col-reverse xl:flex-col">
         <div class="flex flex-col">
